@@ -4,19 +4,26 @@ import { SidebarMenuItem } from "./SidebarMenuItem";
 import { IoHomeSharp } from "react-icons/io5";
 import { IoCalculatorSharp } from "react-icons/io5";
 import { IoLogoReact } from "react-icons/io5";
+import { IoContrastOutline } from "react-icons/io5";
 
 const menuItems = [
   {
     path: "/dashboard/main",
-    icon: <IoHomeSharp size={40} />,
+    icon: <IoHomeSharp size={30} />,
     title: "Dashboard",
     subTitle: "Overview",
   },
   {
     path: "/dashboard/counter",
-    icon: <IoCalculatorSharp size={40} />,
+    icon: <IoCalculatorSharp size={30} />,
     title: "Counter",
     subTitle: "Counter page",
+  },
+  {
+    path: "/dashboard/pokemons",
+    icon: <IoContrastOutline size={30} />,
+    title: "Pokemons",
+    subTitle: "Generacion estatica",
   },
 ];
 
