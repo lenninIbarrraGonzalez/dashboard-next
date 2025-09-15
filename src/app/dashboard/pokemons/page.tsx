@@ -1,7 +1,6 @@
 import { PokemonsGrid } from "@/app/pokemons";
 import { PokemonsResponse } from "@/app/pokemons/interfaces/pokemons-response";
 
-
 const getPokemon = async (
   limit = 20,
   offset = 0
@@ -19,14 +18,14 @@ const getPokemon = async (
 };
 
 export default async function PokemonPage() {
-  const pokemons = await getPokemon(10);
+  const pokemons = await getPokemon(150);
 
   return (
     <>
       <span className="text-2xl font-bold mb-5 flex flex-col items-center">
         Listado de pokemons <small>Estatico</small>
       </span>
-      <PokemonsGrid pokemons={pokemons}/>
+      <PokemonsGrid pokemons={pokemons} />
     </>
   );
 }
