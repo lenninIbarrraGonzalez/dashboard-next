@@ -14,6 +14,8 @@ const getPokemon = async (
     id: pokemon.url.split("/").at(-2)!,
   }));
 
+  throw new Error("Error al cargar los pokemons");
+
   return pokemons;
 };
 
